@@ -62,10 +62,9 @@ function HeroBackground({ onReady }: { onReady: () => void }) {
         src={siteContent.media.heroVideo}
       />
 
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,10,17,0.94)_0%,rgba(3,10,17,0.75)_42%,rgba(3,10,17,0.26)_72%,rgba(3,10,17,0.42)_100%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,9,15,0.46)_0%,transparent_22%,transparent_67%,rgba(3,9,15,0.88)_100%)]" />
-      <div className="hero-grid absolute inset-0 opacity-40" />
-      <div className="absolute top-0 bottom-0 left-[calc(50%-1px)] hidden w-px bg-white/[0.045] xl:block" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,10,17,0.35)_0%,rgba(3,10,17,0.12)_35%,transparent_65%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,9,15,0.15)_0%,transparent_25%,transparent_80%,rgba(3,9,15,0.35)_100%)]" />
+      <div className="hero-grid absolute inset-0 opacity-15" />
     </div>
   );
 }
