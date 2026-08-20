@@ -17,7 +17,7 @@ export function Logo({ className }: LogoProps) {
   return (
     <span
       className={cn(
-        "relative inline-flex h-10 min-w-36 items-center text-text-primary",
+        "relative inline-flex h-14 sm:h-16 lg:h-[68px] min-w-52 items-center text-text-primary",
         className,
       )}
     >
@@ -26,10 +26,10 @@ export function Logo({ className }: LogoProps) {
           className="flex items-center gap-3"
           aria-label={siteContent.company.name}
         >
-          <span className="h-6 w-[3px] bg-accent" aria-hidden="true" />
-          <span className="text-[0.72rem] leading-tight font-semibold tracking-[0.19em] uppercase">
+          <span className="h-9 w-[3px] bg-accent" aria-hidden="true" />
+          <span className="text-[0.92rem] leading-tight font-semibold tracking-[0.19em] uppercase">
             Troy
-            <span className="block text-[0.56rem] font-medium tracking-[0.26em] text-text-secondary">
+            <span className="block text-[0.7rem] font-medium tracking-[0.26em] text-text-secondary">
               Teknoloji
             </span>
           </span>
@@ -40,16 +40,16 @@ export function Logo({ className }: LogoProps) {
         <Image
           alt="Troy Teknoloji"
           className={cn(
-            "absolute inset-y-0 left-0 h-10 w-auto object-contain object-left transition-opacity",
+            "absolute inset-y-0 left-0 h-14 sm:h-16 lg:h-[68px] w-auto object-contain object-left transition-opacity",
             imageReady ? "opacity-100" : "opacity-0",
           )}
-          height={40}
+          height={68}
           onError={() => setImageFailed(true)}
           onLoad={() => setImageReady(true)}
           priority
           src={siteContent.media.logo}
           unoptimized
-          width={176}
+          width={272}
         />
       ) : null}
     </span>

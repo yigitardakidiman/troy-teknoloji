@@ -36,7 +36,7 @@ export const siteContent = {
     },
   },
   media: {
-    logo: "/images/troy-logo.svg",
+    logo: "/images/troy-logo.png",
     heroPoster: "/images/rocket-poster.webp",
     heroVideo: "/videos/rocket-launch.mp4",
     heroVideoWebm: "/videos/rocket-launch.webm",

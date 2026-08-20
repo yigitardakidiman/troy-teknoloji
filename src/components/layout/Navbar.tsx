@@ -62,11 +62,11 @@ export function Navbar() {
     >
       <nav
         aria-label="Ana navigasyon"
-        className="mx-auto flex h-[72px] w-full max-w-[1440px] items-center justify-between px-5 sm:h-20 sm:px-8 lg:px-12 xl:px-16"
+        className="mx-auto flex h-20 w-full max-w-[1440px] items-center justify-between px-5 sm:h-24 sm:px-8 lg:px-12 xl:px-16"
       >
         <a
           aria-label="Troy Teknoloji ana sayfa"
-          className="rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+          className="translate-y-1.5 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent sm:translate-y-2"
           href="#ana-sayfa"
           onClick={() => setIsMenuOpen(false)}
         >
