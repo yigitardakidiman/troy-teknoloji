@@ -5,10 +5,24 @@ import { Navbar } from "@/components/layout/Navbar";
 import { siteContent } from "@/content/site";
 import "@/styles/globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+function getSiteUrl(): URL {
+  const rawUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (rawUrl) {
+    try {
+      const formattedUrl =
+        rawUrl.startsWith("http://") || rawUrl.startsWith("https://")
+          ? rawUrl
+          : `https://${rawUrl}`;
+      return new URL(formattedUrl);
+    } catch {
+      // Fallback to default if parsing fails
+    }
+  }
+  return new URL("http://localhost:3000");
+}
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: getSiteUrl(),
   title: "Troy Teknoloji | AR-GE ve İleri Mühendislik Çözümleri",
   description:
     "Troy Teknoloji; ürün geliştirme, mekanik ve elektromekanik sistemler, hızlı prototipleme ve ileri mühendislik alanlarında AR-GE çözümleri sunar.",
