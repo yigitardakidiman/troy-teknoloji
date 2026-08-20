@@ -37,6 +37,7 @@
 }
 
 html {
+  zoom: 0.75;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
   background: var(--background-deep);
