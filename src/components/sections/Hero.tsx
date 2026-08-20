@@ -69,24 +69,6 @@ function HeroBackground({ onReady }: { onReady: () => void }) {
   );
 }
 
-function ScrollIndicator() {
-  return (
-    <a
-      aria-label="Uzmanlık alanlarına ilerle"
-      className="group absolute right-5 bottom-7 z-10 flex items-center gap-3 text-[0.6rem] font-medium tracking-[0.2em] text-text-muted uppercase transition-colors hover:text-text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent sm:right-8 lg:right-12 lg:bottom-10 xl:right-16"
-      href="#uzmanlik-alanlari"
-    >
-      <span className="hidden sm:inline">Keşfet</span>
-      <span
-        className="relative block h-12 w-px overflow-hidden bg-white/20"
-        aria-hidden="true"
-      >
-        <span className="scroll-line absolute inset-x-0 top-0 h-5 bg-accent" />
-      </span>
-    </a>
-  );
-}
-
 export function Hero() {
   const prefersReducedMotion = usePrefersReducedMotion();
   const [contentReady, setContentReady] = useState(false);
@@ -167,7 +149,6 @@ export function Hero() {
         </div>
       </SectionContainer>
 
-      <ScrollIndicator />
       <div
         className="absolute right-0 bottom-0 left-0 z-10 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"
         aria-hidden="true"
