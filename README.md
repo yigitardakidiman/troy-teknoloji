@@ -69,6 +69,9 @@ Doğrulanmış e-posta, telefon ve adres bilgileri geldiğinde `contact` alanlar
 ## Proje yapısı
 
 ```text
+docs/
+├── DESIGN.md               # Tasarım sistemi ve stil rehberi
+└── PRODUCT.md              # Ürün gereksinimleri ve yol haritası
 src/
 ├── app/                    # App Router, metadata ve manifest
 ├── components/

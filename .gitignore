@@ -1,5 +1,7 @@
 # dependencies
 /node_modules
+/.impeccable
+/.agents
 
 # next.js
 /.next/
